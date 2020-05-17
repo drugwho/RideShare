@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+ users:
+  build: ./users
+  image: users:latest
+  volumes:
+   - ./users:/usr/src/app
+  ports:
+   - 80:80

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+ rides:
+  build: ./rides
+  image: rides:latest
+  volumes:
+   - ./rides:/usr/src/app
+  ports:
+   - 80:80
